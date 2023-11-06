@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapstoneWEB.API", "CapstoneWEB.API\CapstoneWEB.API.csproj", "{9E567A37-E23A-4A9C-B0F8-4A1BE9E66550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapstoneWEB.CORE", "CapstoneWEB.CORE\CapstoneWEB.CORE.csproj", "{B68C6F10-8837-47D4-A510-B17175D536DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapstoneWEB.INFRASTRUCTURE", "CapstoneWEB.INFRASTRUCTURE\CapstoneWEB.INFRASTRUCTURE.csproj", "{092F8B0D-C170-4BB1-8ED1-1830A564B25E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E567A37-E23A-4A9C-B0F8-4A1BE9E66550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E567A37-E23A-4A9C-B0F8-4A1BE9E66550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E567A37-E23A-4A9C-B0F8-4A1BE9E66550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E567A37-E23A-4A9C-B0F8-4A1BE9E66550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68C6F10-8837-47D4-A510-B17175D536DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68C6F10-8837-47D4-A510-B17175D536DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68C6F10-8837-47D4-A510-B17175D536DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68C6F10-8837-47D4-A510-B17175D536DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092F8B0D-C170-4BB1-8ED1-1830A564B25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092F8B0D-C170-4BB1-8ED1-1830A564B25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092F8B0D-C170-4BB1-8ED1-1830A564B25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092F8B0D-C170-4BB1-8ED1-1830A564B25E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B6F9558-10B4-4AFD-8B65-895D03336E99}
+	EndGlobalSection
+EndGlobal

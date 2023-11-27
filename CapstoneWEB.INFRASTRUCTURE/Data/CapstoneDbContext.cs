@@ -18,7 +18,7 @@ public partial class CapstoneDbContext : DbContext
 
     public virtual DbSet<EmotionDetail> EmotionDetail { get; set; }
 
-    public virtual DbSet<CORE.Entities.File> File { get; set; }
+    public virtual DbSet<CapstoneWEB.CORE.Entities.File> File { get; set; }
 
     public virtual DbSet<User> User { get; set; }
 
@@ -44,7 +44,7 @@ public partial class CapstoneDbContext : DbContext
                 .HasConstraintName("FK__EmotionDe__idUse__3A81B327");
         });
 
-        modelBuilder.Entity<CORE.Entities.File>(entity =>
+        modelBuilder.Entity<CapstoneWEB.CORE.Entities.File>(entity =>
         {
             entity.HasKey(e => e.IdFile).HasName("PK__File__775AFE72504C8520");
 

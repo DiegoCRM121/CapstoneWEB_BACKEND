@@ -18,6 +18,9 @@ builder
 builder.Services.AddSharedInfrastructure(_config);
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IFileRepository, FileRepository>();
+builder.Services.AddTransient<IFileService, FileService>();
+builder.Services.AddTransient<IEmotionDetailRepository, EmotionDetailRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddCors(options =>

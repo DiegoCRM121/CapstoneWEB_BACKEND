@@ -18,13 +18,9 @@ public partial class CapstoneDbContext : DbContext
 
     public virtual DbSet<EmotionDetail> EmotionDetail { get; set; }
 
-    public virtual DbSet<File> File { get; set; }
+    public virtual DbSet<CORE.Entities.File> File { get; set; }
 
     public virtual DbSet<User> User { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-CU4P7U7\\SQLEXPRESS;Database=CapstoneDB;User=sa;Pwd=#klOF20-%=1_ZzXpoqT80/7/?;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -48,7 +44,7 @@ public partial class CapstoneDbContext : DbContext
                 .HasConstraintName("FK__EmotionDe__idUse__3A81B327");
         });
 
-        modelBuilder.Entity<File>(entity =>
+        modelBuilder.Entity<CORE.Entities.File>(entity =>
         {
             entity.HasKey(e => e.IdFile).HasName("PK__File__775AFE72504C8520");
 

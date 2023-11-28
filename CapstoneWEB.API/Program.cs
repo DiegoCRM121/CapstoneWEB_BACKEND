@@ -13,7 +13,7 @@ var _config = builder.Configuration;
 var _cnx = _config.GetConnectionString("DevConnection");
 builder
     .Services
-    .AddDbContext<CapstoneDbContext>
+    .AddDbContext<CapstoneWebBdContext>
     (options => options.UseSqlServer(_cnx));
 builder.Services.AddSharedInfrastructure(_config);
 builder.Services.AddTransient<IUserRepository, UserRepository>();

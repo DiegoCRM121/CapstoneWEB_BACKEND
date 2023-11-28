@@ -8,9 +8,9 @@ namespace CapstoneWEB.INFRASTRUCTURE.Repositories
 {
     public class EmotionDetailRepository: IEmotionDetailRepository
     {
-        private readonly CapstoneDbContext _dbContext;
+        private readonly CapstoneWebBdContext _dbContext;
 
-        public EmotionDetailRepository(CapstoneDbContext dbContext)
+        public EmotionDetailRepository(CapstoneWebBdContext dbContext)
         {
             _dbContext = dbContext;
         }

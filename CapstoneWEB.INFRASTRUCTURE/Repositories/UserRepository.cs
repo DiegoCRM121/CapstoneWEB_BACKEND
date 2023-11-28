@@ -8,9 +8,9 @@ namespace CapstoneWEB.INFRASTRUCTURE.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly CapstoneDbContext _dbContext;
+        private readonly CapstoneWebBdContext _dbContext;
 
-        public UserRepository(CapstoneDbContext dbContext)
+        public UserRepository(CapstoneWebBdContext dbContext)
         {
             _dbContext = dbContext;
         }

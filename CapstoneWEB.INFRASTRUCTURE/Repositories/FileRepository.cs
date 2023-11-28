@@ -8,9 +8,9 @@ namespace CapstoneWEB.INFRASTRUCTURE.Repositories
 {
     public class FileRepository: IFileRepository
     {
-        private readonly CapstoneDbContext _dbContext;
+        private readonly CapstoneWebBdContext _dbContext;
 
-        public FileRepository(CapstoneDbContext dbContext)
+        public FileRepository(CapstoneWebBdContext dbContext)
         {
             _dbContext = dbContext;
         }

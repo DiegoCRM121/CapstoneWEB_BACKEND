@@ -1,24 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using CapstoneWEB.CORE.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CapstoneWEB.INFRASTRUCTURE.Data;
 
-public partial class CapstoneDbContext : DbContext
+public partial class CapstoneWebBdContext : DbContext
 {
-    public CapstoneDbContext()
+    public CapstoneWebBdContext()
     {
     }
 
-    public CapstoneDbContext(DbContextOptions<CapstoneDbContext> options)
+    public CapstoneWebBdContext(DbContextOptions<CapstoneWebBdContext> options)
         : base(options)
     {
     }
 
     public virtual DbSet<EmotionDetail> EmotionDetail { get; set; }
 
-    public virtual DbSet<CapstoneWEB.CORE.Entities.File> File { get; set; }
+    public virtual DbSet<CORE.Entities.File> File { get; set; }
 
     public virtual DbSet<User> User { get; set; }
 
@@ -37,20 +37,18 @@ public partial class CapstoneDbContext : DbContext
 
             entity.HasOne(d => d.IdFileNavigation).WithMany()
                 .HasForeignKey(d => d.IdFile)
-                .HasConstraintName("FK__EmotionDe__idFil__3B75D760");
+                .HasConstraintName("FK__EmotionDe__idFil__286302EC");
 
             entity.HasOne(d => d.IdUserNavigation).WithMany()
                 .HasForeignKey(d => d.IdUser)
-                .HasConstraintName("FK__EmotionDe__idUse__3A81B327");
+                .HasConstraintName("FK__EmotionDe__idUse__276EDEB3");
         });
 
-        modelBuilder.Entity<CapstoneWEB.CORE.Entities.File>(entity =>
+        modelBuilder.Entity<CORE.Entities.File>(entity =>
         {
-            entity.HasKey(e => e.IdFile).HasName("PK__File__775AFE72504C8520");
+            entity.HasKey(e => e.IdFile).HasName("PK__File__775AFE721EE690C4");
 
-            entity.Property(e => e.IdFile)
-                .ValueGeneratedNever()
-                .HasColumnName("idFile");
+            entity.Property(e => e.IdFile).HasColumnName("idFile");
             entity.Property(e => e.FileName)
                 .HasMaxLength(200)
                 .IsUnicode(false)
@@ -63,11 +61,9 @@ public partial class CapstoneDbContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.IdUser).HasName("PK__User__3717C982672263D8");
+            entity.HasKey(e => e.IdUser).HasName("PK__User__3717C982C3ABB804");
 
-            entity.Property(e => e.IdUser)
-                .ValueGeneratedNever()
-                .HasColumnName("idUser");
+            entity.Property(e => e.IdUser).HasColumnName("idUser");
             entity.Property(e => e.Address)
                 .HasMaxLength(200)
                 .IsUnicode(false)
